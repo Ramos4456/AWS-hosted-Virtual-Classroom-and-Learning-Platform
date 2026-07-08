@@ -1,32 +1,57 @@
-🏫 AWS-Hosted Virtual Classroom & Learning Platform
-Python Flask AWS EC2 AWS S3 AWS RDS Bootstrap
+# 🏫 AWS-Hosted Virtual Classroom & Learning Platform
 
-📌 Project Overview
-This project is a cloud-native virtual classroom web application built using Python (Flask) and deployed on Amazon Web Services (AWS). It demonstrates the integration of core AWS services to create a secure, scalable, and responsive digital learning environment.
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
+![Flask](https://img.shields.io/badge/Flask-Backend-black?style=for-the-badge&logo=flask)
+![AWS EC2](https://img.shields.io/badge/AWS%20EC2-Compute-orange?style=for-the-badge&logo=amazonec2)
+![AWS S3](https://img.shields.io/badge/AWS%20S3-Storage-red?style=for-the-badge&logo=amazons3)
+![AWS RDS](https://img.shields.io/badge/AWS%20RDS-Database-blue?style=for-the-badge&logo=amazonrds)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-Frontend-purple?style=for-the-badge&logo=bootstrap)
+
+---
+
+## 📌 Project Overview
+This project is a **cloud-native virtual classroom web application** built using Python (Flask) and deployed on Amazon Web Services (AWS). It demonstrates the integration of core AWS services to create a secure, scalable, and responsive digital learning environment. 
 
 Students can register, authenticate securely, and stream or download course materials, while administrators can dynamically upload and manage educational assets.
 
-🏗️ System Architecture & Workflow
+---
+
+## 🏗️ System Architecture & Workflow
+
 The platform leverages a classic, secure 3-tier cloud architecture:
 
-Presentation Layer: Responsive UI built with HTML5, CSS3, JavaScript, and Bootstrap, rendered dynamically via Flask templates.
-Application Layer: Flask backend hosted on an AWS EC2 instance managing routing, session authentication, and secure AWS API communications.
-Storage & Data Layer: * AWS RDS (MySQL Engine): Securely stores user credentials, session profiles, and file metadata.
-AWS S3: A highly scalable object storage bucket utilized for hosting and serving academic PDFs, documents, and media resources via boto3.
-🚀 Core Features & User Scenarios
-🎓 Student Experience
-Secure Authentication: Self-registration and login with secure session management.
-Interactive Dashboard: Access to dynamically populated course catalogs.
-Direct Content Streaming: Fast asset downloading and previewing sourced directly from AWS S3.
-🛠️ Administrative Control
-Centralized Content Management: Admin portal to upload educational materials.
-Automated Cloud Sync: Background scripts that upload raw files to S3 while simultaneously logging the file metadata into AWS RDS.
-⚙️ Technology Stack
-Backend: Python, Flask, Boto3 (AWS SDK for Python), PyMySQL
-Frontend: HTML5, CSS3, JavaScript (ES6), Bootstrap 5
-Cloud Infrastructure: AWS EC2 (Compute), AWS S3 (Object Storage), AWS RDS (Managed MySQL Database)
-Development Tools: Git/GitHub, MySQL Workbench
-📂 Project Structure
+1. **Presentation Layer:** Responsive UI built with HTML5, CSS3, JavaScript, and Bootstrap, rendered dynamically via Flask templates.
+2. **Application Layer:** Flask backend hosted on an **AWS EC2** instance managing routing, session authentication, and secure AWS API communications.
+3. **Storage & Data Layer:** * **AWS RDS (MySQL Engine):** Securely stores user credentials, session profiles, and file metadata.
+   * **AWS S3:** A highly scalable object storage bucket utilized for hosting and serving academic PDFs, documents, and media resources via `boto3`.
+
+---
+
+## 🚀 Core Features & User Scenarios
+
+### 🎓 Student Experience
+* **Secure Authentication:** Self-registration and login with secure session management.
+* **Interactive Dashboard:** Access to dynamically populated course catalogs.
+* **Direct Content Streaming:** Fast asset downloading and previewing sourced directly from AWS S3.
+
+### 🛠️ Administrative Control
+* **Centralized Content Management:** Admin portal to upload educational materials.
+* **Automated Cloud Sync:** Background scripts that upload raw files to S3 while simultaneously logging the file metadata into AWS RDS.
+
+---
+
+## ⚙️ Technology Stack
+
+* **Backend:** Python, Flask, Boto3 (AWS SDK for Python), PyMySQL
+* **Frontend:** HTML5, CSS3, JavaScript (ES6), Bootstrap 5
+* **Cloud Infrastructure:** AWS EC2 (Compute), AWS S3 (Object Storage), AWS RDS (Managed MySQL Database)
+* **Development Tools:** Git/GitHub, MySQL Workbench
+
+---
+
+## 📂 Project Structure
+
+```bash
 AWS-hosted-Virtual-Classroom/
 │
 ├── Documentation/
